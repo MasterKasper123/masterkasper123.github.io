@@ -79,15 +79,15 @@ const textNodes = [
   },
   {
     id: 3,
-    text: 'You leave the salesman and start to follow a small road. After a while you start to feel tired and stumble upon a small town next to a dangerous looking castle.',
+    text: 'You leave the salesman and start to follow a small road. After a while you start to feel tired and the road leads you to a crossing. One road leads to a small village, another to a really big and epic sandstone temple and the third to a deep and sinister-looking forest made of holy banana trees.',
     options: [
       {
-        text: 'Explore the castle',
+        text: 'Explore the Epic Temple',
         nextText: 4
       },
       {
-        text: 'Find a room to sleep at in the town',
-        nextText: 5
+        text: 'Find a room to sleep in at the village',
+        nextText: 12
       },
       {
         text: 'Find some hay in a stable to sleep in',
@@ -97,7 +97,7 @@ const textNodes = [
   },
   {
     id: 4,
-    text: 'You are so tired that you fall asleep while exploring the castle and are killed by some terrible monster in your sleep.',
+    text: "Tired and with hurting legs you walk into the temple. There you find a big chest made of tree. You figure that's a good place to sleep. So you open the chest, and that's the last thing you ever do.",
     options: [
       {
         text: 'Restart',
@@ -107,27 +107,31 @@ const textNodes = [
   },
   {
     id: 5,
-    text: 'Without any money to buy a room you break into the nearest inn and fall asleep. After a few hours of sleep the owner of the inn finds you and has the town guard lock you in a cell.',
+    text: 'Without any money to buy a room you break into one of the rooms in the nearest inn and fall asleep. After a few hours of sleep the owner of the inn finds you and has the town guard lock you in a cell.',
     options: [
       {
-        text: 'Restart',
+        text: "You're in prison, restart",
         nextText: -1
       }
     ]
   },
   {
     id: 6,
-    text: 'You wake up well rested and full of energy ready to explore the nearby castle.',
+    text: "You wake up, well rested and ready to take on the next day.",
     options: [
       {
         text: 'Explore the castle',
         nextText: 7
+      },
+      {
+        text: 'Explore the sinister banana-forest',
+        nextText: 13
       }
     ]
   },
   {
     id: 7,
-    text: 'While exploring the castle you come across a horrible monster in your path.',
+    text: "You enter the big temple, feeling excited, maybe a little too excited. After only a few minutes you're lost in a maze of tunnels and rooms with ancient paintings and curses on the walls. You're walking down a hallway when you see two rooms.",
     options: [
       {
         text: 'Try to run',
@@ -189,7 +193,31 @@ const textNodes = [
         nextText: -1
       }
     ]
-  }
+  },
+  {
+    id: 12
+    text: "You don't have any money so you can't rent a room in the village's only inn."
+    options: [
+      {
+        text: 'Try to secretly break into one of the empty houses in the village',
+        nextText: 5
+      },
+      {
+        text: 'Trade the rotten banana for a room instead of money.',
+        requiredState: (currentState) => currentState.rottenBanana
+        nextText: 6
+      },
+      {
+        text: 'Trade the sword for a room instead of money.',
+        requiredState: (currentState) => currentState.sword
+        nextText: 6
+      },
+      {
+        text: 'Trade the wooden shield for a room instead of money.',
+        requiredState: (currentState) => currentState.shield
+        nextText: 6
+      }
+    ]
 ]
 
 startGame()
