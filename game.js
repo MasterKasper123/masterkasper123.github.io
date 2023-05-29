@@ -196,7 +196,7 @@ const textNodes = [
   },
   {
     id: 12,
-    text: "You don't have any money so you can't rent a room in the village's only inn."
+    text: "You don't have any money so you can't rent a room in the village's only inn.",
     options: [
       {
         text: 'Try to secretly break into one of the empty houses in the village',
