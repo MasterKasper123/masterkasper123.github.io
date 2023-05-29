@@ -110,7 +110,7 @@ const textNodes = [
     text: 'Without any money to buy a room you break into one of the rooms in the nearest inn and fall asleep. After a few hours of sleep the owner of the inn finds you and has the town guard lock you in a cell.',
     options: [
       {
-        text: "You're in prison, restart",
+        text: "Restart",
         nextText: -1
       }
     ]
