@@ -204,17 +204,17 @@ const textNodes = [
       },
       {
         text: 'Trade the rotten banana for a room instead of money.',
-        requiredState: (currentState) => currentState.rottenBanana
+        requiredState: (currentState) => currentState.rottenBanana,
         nextText: 6
       },
       {
         text: 'Trade the sword for a room instead of money.',
-        requiredState: (currentState) => currentState.sword
+        requiredState: (currentState) => currentState.sword,
         nextText: 6
       },
       {
         text: 'Trade the wooden shield for a room instead of money.',
-        requiredState: (currentState) => currentState.shield
+        requiredState: (currentState) => currentState.shield,
         nextText: 6
       }
     ]
