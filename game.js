@@ -216,8 +216,7 @@ const textNodes = [
         text: 'Trade the wooden shield for a room instead of money.',
         requiredState: (currentState) => currentState.shield,
         nextText: 6
-      }
-    ]
-]
+  }
+}
 
 startGame()
