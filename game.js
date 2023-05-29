@@ -42,44 +42,44 @@ function selectOption(option) {
 const textNodes = [
   {
     id: 1,
-    text: 'You wake up in a strange place and you see a jar of blue goo near you.',
+    text: "You wake up in a strange place and there is a rotten banana in front of you.",
     options: [
       {
-        text: 'Take the goo',
-        setState: { blueGoo: true },
+        text: 'Take the rotten banana',
+        setState: { rottenBanana: true },
         nextText: 2
       },
       {
-        text: 'Leave the goo',
+        text: 'Leave the banana',
         nextText: 2
       }
     ]
   },
   {
     id: 2,
-    text: 'You venture forth in search of answers to where you are when you come across a merchant.',
+    text: "You don't know where you are, so you start to explore your surroundings. To your surprise you're in the middle of a desert. After a while you meet a sus salesman on a white horse."
     options: [
       {
-        text: 'Trade the goo for a sword',
-        requiredState: (currentState) => currentState.blueGoo,
-        setState: { blueGoo: false, sword: true },
+        text: 'Trade the rotten banana for a sword',
+        requiredState: (currentState) => currentState.rottenBanana,
+        setState: { rottenBanana: false, sword: true },
         nextText: 3
       },
       {
-        text: 'Trade the goo for a shield',
-        requiredState: (currentState) => currentState.blueGoo,
-        setState: { blueGoo: false, shield: true },
+        text: 'Trade the banana for a shield',
+        requiredState: (currentState) => currentState.rottenBanana,
+        setState: { rottenBanana: false, shield: true },
         nextText: 3
       },
       {
-        text: 'Ignore the merchant',
+        text: 'Ignore the salesman',
         nextText: 3
       }
     ]
   },
   {
     id: 3,
-    text: 'After leaving the merchant you start to feel tired and stumble upon a small town next to a dangerous looking castle.',
+    text: 'You leave the salesman and start to follow a small road. After a while you start to feel tired and stumble upon a small town next to a dangerous looking castle.',
     options: [
       {
         text: 'Explore the castle',
@@ -144,8 +144,8 @@ const textNodes = [
         nextText: 10
       },
       {
-        text: 'Throw the blue goo at it',
-        requiredState: (currentState) => currentState.blueGoo,
+        text: 'Throw the rotten banana at it',
+        requiredState: (currentState) => currentState.rottenBanana,
         nextText: 11
       }
     ]
