@@ -131,10 +131,10 @@ const textNodes = [
   },
   {
     id: 7,
-    text: "You enter the big temple, feeling excited, maybe a little too excited. After only a few minutes you're lost in a maze of tunnels and rooms with ancient paintings and curses on the walls. You're walking down a hallway when you see two rooms.",
+    text: "You enter the big temple, feeling excited, maybe a little too excited. After only a few minutes you're lost in a maze of tunnels and rooms with ancient paintings and curses on the walls. You're walking down a hallway when you see two rooms. One of the room is full of diamonds and riches and the other is empty except for a wooden chest, painted in red, blue and yellow dye.",
     options: [
       {
-        text: 'Try to run',
+        text: 'Walk into the room with diamonds',
         nextText: 8
       },
       {
@@ -205,16 +205,19 @@ const textNodes = [
       {
         text: 'Trade the rotten banana for a room instead of money.',
         requiredState: (currentState) => currentState.rottenBanana,
+        setState: { rottenBanana: false},
         nextText: 6
       },
       {
         text: 'Trade the sword for a room instead of money.',
         requiredState: (currentState) => currentState.sword,
+        setState: { sword: false},
         nextText: 6
       },
       {
         text: 'Trade the wooden shield for a room instead of money.',
         requiredState: (currentState) => currentState.shield,
+        setState: { shield: false},
         nextText: 6
       }
     ]
