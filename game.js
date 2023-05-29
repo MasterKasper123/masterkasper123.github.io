@@ -195,7 +195,7 @@ const textNodes = [
     ]
   },
   {
-    id: 12
+    id: 12,
     text: "You don't have any money so you can't rent a room in the village's only inn."
     options: [
       {
