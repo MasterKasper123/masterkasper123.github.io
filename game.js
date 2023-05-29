@@ -217,6 +217,6 @@ const textNodes = [
         requiredState: (currentState) => currentState.shield,
         nextText: 6
       }
-   }
+  }
 }
 startGame()
