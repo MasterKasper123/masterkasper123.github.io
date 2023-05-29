@@ -57,7 +57,7 @@ const textNodes = [
   },
   {
     id: 2,
-    text: "You don't know where you are, so you start to explore your surroundings. To your surprise you're in the middle of a desert. After a while you meet a sus salesman on a white horse."
+    text: "You don't know where you are, so you start to explore your surroundings. To your surprise you're in the middle of a desert. After a while you meet a sus salesman on a white horse.",
     options: [
       {
         text: 'Trade the rotten banana for a sword',
