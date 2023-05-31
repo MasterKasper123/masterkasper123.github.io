@@ -92,6 +92,10 @@ const textNodes = [
       {
         text: 'Find some hay in a stable to sleep in',
         nextText: 6
+      },
+      {
+        text: 'Explore the sinister banana forest',
+        nextText: 13
       }
     ]
   },
@@ -138,9 +142,9 @@ const textNodes = [
         nextText: 8
       },
       {
-        text: 'Attack it with your sword',
+        text: 'Explore the chest',
         requiredState: (currentState) => currentState.sword,
-        nextText: 9
+        nextText: 15
       },
       {
         text: 'Hide behind your shield',
@@ -156,11 +160,15 @@ const textNodes = [
   },
   {
     id: 8,
-    text: 'Your attempts to run are in vain and the monster easily catches.',
+    text: 'You walk into the room, amazed by all the precious and beautiful diamonds. This chamber is stunning. How can all these diamonds have been missed by previous treasure hunters, you wonder. And thats when you see the hole. In the middle of the room there is a big hole in the floor, it looks a little bit like a well. You hear some mysterious sounds coming out of the dark hole, so you walk closer. You stand right by the pit and look down into it. You can not see the bottom because it is curved, but you can see a green light coming up from somewhere down there.',
     options: [
       {
-        text: 'Restart',
-        nextText: -1
+        text: 'Jump into the hole',
+        nextText: 13
+      },
+      {
+        text: 'Run away',
+        nextText: 14
       }
     ]
   },
@@ -219,7 +227,17 @@ const textNodes = [
         requiredState: (currentState) => currentState.shield,
         setState: { shield: false},
         nextText: 6
+      },
+      {
+    id: 13,
+    text: "You fall down about twenty meters and the only thing stopping you from dying from fall damage is te fact that the pit isn't straight. You get slung into the walls many times as you fall down into the home of thousands of black insects that give away a green light from a sting on thier back. You're already hurt from the fall and the bugs easily eat you and build a nest out of you. You stupidly decided to jump into a deep and evil hole that looks very dangerous inside of an ancient temple all alone. What did you expect? ",
+    options: [
+      {
+        text: 'Congratulations. Play Again.',
+        nextText: -1
       }
+    ]
+  },
     ]
   }
 ]
