@@ -124,7 +124,7 @@ const textNodes = [
     text: "You wake up, well rested and ready to take on the next day.",
     options: [
       {
-        text: 'Explore the castle',
+        text: 'Explore the temple',
         nextText: 7
       },
       {
