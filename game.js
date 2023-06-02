@@ -324,7 +324,7 @@ const textNodes = [
     text: "You walk into the room with the chest, and when you get closer to the chest you see that it's painted in red, yellow and blue. You get a really bad feeling about this chest, but your curiousity takes the upper hand. You open up the chest and inside is a mummy. You get a jumpscare and then the mummy kills you.",
     options: [
       {
-        text: "You died, respawn.",
+        text: "You died, restart.",
         nextText: -1
       }
     ]
