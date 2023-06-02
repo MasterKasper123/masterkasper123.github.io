@@ -143,8 +143,7 @@ const textNodes = [
       },
       {
         text: 'Explore the chest',
-        requiredState: (currentState) => currentState.sword,
-        nextText: 15
+        nextText: 21
       }
     ]
   },
@@ -313,6 +312,16 @@ const textNodes = [
   {
     id: 20,
     text: "You actually manage to grab a banana before you flee as fast as possible away from the scary phantom and you manage to outrun it. When you're outside of the forest it can't reach you anymore. Now that you have been in the forest, you're excited to explore the desert temple, or is it catacombs? ",
+    options: [
+      {
+        text: 'Enter the temple',
+        nextText: 7
+      }
+    ]
+  },
+  {
+    id: 21,
+    text: "You walk into the room with the chest, and when you get closer to the chest you see that it's painted in red, yellow and blue. You get a really bad feeling about this chest, but your curiousity takes the upper hand",
     options: [
       {
         text: 'Enter the temple',
