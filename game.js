@@ -276,8 +276,7 @@ const textNodes = [
   },
   {
     id: 17,
-    text: "You enter the forest although you feel very tired and would like to sleep. You have a very bad feeling about this. You follow the road about 500 meters into the forest. The forest is very dense and all the big banana trees make it very dark this far into the forest. You start to hear weird sounds around you. You think it's just imagination, so you continue on deeper into the forest. When you are about one mile into the forest you hear quick footsteps behind you. You turn around, scared, but you can't see anything in the dark. The footsteps continue, faster and faster, closer and closer. You get scared and try to run away from the thing that's running towards you, but that's when you run straight into a big banana tree. You faint, and get killed by the evil 
-    that hates all humans.",
+    text: "You enter the forest although you feel very tired and would like to sleep. You have a very bad feeling about this. You follow the road about 500 meters into the forest. The forest is very dense and all the big banana trees make it very dark this far into the forest. You start to hear weird sounds around you. You think it's just imagination, so you continue on deeper into the forest. When you are about one mile into the forest you hear quick footsteps behind you. You turn around, scared, but you can't see anything in the dark. The footsteps continue, faster and faster, closer and closer. You get scared and try to run away from the thing that's running towards you, but that's when you run straight into a big banana tree. You faint, and get killed by the evil banana man that hates all humans.",
     options: [
       {
         text: 'You lost, restart?',
