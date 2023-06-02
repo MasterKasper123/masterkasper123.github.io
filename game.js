@@ -296,6 +296,10 @@ const textNodes = [
         text: "Take the risk to quickly grab a banana from one of the trees before you run out of the forest",
         setState: { rottenBanana: true},
         nextText: 20
+      },
+      {
+        text: "Walk towards the figure in an attempt to befriend it.",
+        nextText: 22
       }
     ]
   },
@@ -326,6 +330,16 @@ const textNodes = [
       {
         text: "You died, restart.",
         nextText: -1
+      }
+    ]
+  },
+  {
+    id: 22,
+    text: "You start to walk towards the banana man and try to look friendly. You raise your hands to show that you will not hurt it, but it just continues to run towards you with the scythe. When the distance between you and the figure is only five meters you realize that it's not gonna stop, but it's already way to late. The angry creature attacks you and you become the next victim of the infamous banana man.",
+    options: [
+      {
+        text: "The banana man ate you, restart",
+        nextText: 2
       }
     ]
   }
