@@ -339,7 +339,7 @@ const textNodes = [
     options: [
       {
         text: "The banana man ate you, restart",
-        nextText: 2
+        nextText: -1
       }
     ]
   }
