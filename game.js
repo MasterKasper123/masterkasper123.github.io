@@ -287,7 +287,7 @@ const textNodes = [
   },
   {
     id: 18,
-    text: "You enter the forest, and the first thing you nitice is the bad smell. But since you're full of energy from having such a good sleep last night, you don't care about the smell. You walk further into the forest with confidence in your legs. When you're about one mile in, you see a dark figure about 50 meters away on the road. You stop walking, and start to observe the it closer. It looks like a ghost of some sort. While you're watching the banana deamon, it suddenly turns around and spots you. It lets out a horrifying scream, and start to walk towards you with a scythe in it's hands.",
+    text: "You enter the forest, and the first thing you notice is the bad smell. But since you're full of energy from having such a good sleep last night, you don't care about the smell. You walk further into the forest with confidence in your legs. When you're about one mile in, you see a dark figure about 50 meters away on the road. You stop walking, and start to observe the it closer. It looks like a ghost of some sort. While you're watching the banana deamon, it suddenly turns around and spots you. It lets out a horrifying scream, and start to walk towards you with a scythe in it's hands.",
     options: [
       {
         text: 'RUN BACK OUT OF THE FOREST',
